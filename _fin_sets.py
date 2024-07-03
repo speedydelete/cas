@@ -88,14 +88,19 @@ class FFSet(FSet, ABC):
 
     def __repr__(self) -> str:
         return object.__repr__(self)
+
     def __str__(self) -> str:
         return object.__str__(self)
+
     def __hash__(self) -> int:
         return object.__hash__(self)
+
     def __contains__(self, other) -> bool:
         return NotImplemented
+
     def __le__(self, other) -> bool:
         return NotImplemented
+
     def __lt__(self, other) -> bool:
         return NotImplemented
 
